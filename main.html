@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* [VOTRE CSS INTACT - COPIEZ-LE D'ICI] */
         /* ====== VARIABLES PROFESSIONNELLES ====== */
         :root {
             --primary: #00d4ff;
@@ -39,7 +40,7 @@
             line-height: 1.6;
         }
 
-        /* ====== BACKGROUND DYNAMIQUE MULTI-COUCHES ====== */
+        /* BACKGROUND DYNAMIQUE MULTI-COUCHES */
         #particles-canvas {
             position: fixed;
             top: 0; left: 0;
@@ -80,14 +81,14 @@
             100% { transform: translate(50px, 50px); }
         }
 
-        /* ====== CONTENEUR ====== */
+        /* CONTENEUR */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* ====== PAGE D'ACCUEIL ====== */
+        /* PAGE D'ACCUEIL */
         .cover-page {
             min-height: 100vh;
             display: flex;
@@ -228,7 +229,7 @@
             60% { transform: translateX(-50%) translateY(-5px); }
         }
 
-        /* ====== NAVIGATION ====== */
+        /* NAVIGATION */
         nav {
             position: fixed;
             top: 0; width: 100%;
@@ -268,7 +269,7 @@
             background: rgba(0, 168, 255, 0.1);
         }
 
-        /* ====== SECTIONS ====== */
+        /* SECTIONS */
         section {
             padding: 6rem 0;
             position: relative;
@@ -304,7 +305,7 @@
             border-radius: 2px;
         }
 
-        /* ====== PROFILE ====== */
+        /* PROFILE */
         .profile-content {
             max-width: 900px;
             margin: 0 auto;
@@ -329,7 +330,7 @@
             position: relative;
         }
 
-        /* ====== EXPERTISE ====== */
+        /* EXPERTISE */
         .expertise-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -406,7 +407,7 @@
             z-index: 2;
         }
 
-        /* ====== TECH STACK ====== */
+        /* TECH STACK */
         .tech-stack {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -460,7 +461,7 @@
             transform: translateY(-2px);
         }
 
-        /* ====== PROJECTS ====== */
+        /* PROJECTS */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -528,7 +529,7 @@
             font-size: 1.2rem;
         }
 
-        /* ====== TIMELINE ====== */
+        /* TIMELINE */
         .timeline {
             position: relative;
             max-width: 800px;
@@ -617,7 +618,7 @@
             line-height: 1.7;
         }
 
-        /* ====== CONTACT ====== */
+        /* CONTACT */
         .contact-section {
             text-align: center;
         }
@@ -689,7 +690,7 @@
             border-radius: 10px;
         }
 
-        /* ====== SIGNATURE ====== */
+        /* SIGNATURE */
         .signature {
             text-align: center;
             padding: 4rem 0;
@@ -722,7 +723,7 @@
             line-height: 1.6;
         }
 
-        /* ====== ANIMATIONS ====== */
+        /* ANIMATIONS */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -739,7 +740,7 @@
         .stagger-delay-3 { transition-delay: 0.3s; }
         .stagger-delay-4 { transition-delay: 0.4s; }
 
-        /* ====== RESPONSIVE ====== */
+        /* RESPONSIVE */
         @media (max-width: 768px) {
             .cover-content h1 {
                 font-size: 2.2rem;
@@ -1204,7 +1205,7 @@
     </div>
 
     <script>
-        // ====== PARTICULES AMÉLIORÉES ======
+        // PARTICULES AMÉLIORÉES
         const canvas = document.getElementById('particles-canvas');
         const ctx = canvas.getContext('2d');
         let particlesArray;
@@ -1280,7 +1281,7 @@
             init();
         });
 
-        // ====== NAVBAR SCROLL ======
+        // NAVBAR SCROLL
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 100) {
@@ -1290,7 +1291,7 @@
             }
         });
 
-        // ====== SMOOTH SCROLL ======
+        // SMOOTH SCROLL
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1304,7 +1305,7 @@
             });
         });
 
-        // ====== INTERSECTION OBSERVER ======
+        // INTERSECTION OBSERVER
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1322,7 +1323,7 @@
             observer.observe(el);
         });
 
-        // ====== ACTIVE NAV LINK ======
+        // ACTIVE NAV LINK
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-link');
 
